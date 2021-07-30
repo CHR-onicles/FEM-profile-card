@@ -132,10 +132,10 @@ h2 {
     gap: 0.5em;
 }
 .attribution {
-    /* position: fixed; */
     color: white;
     font-size: 11px;
     text-align: center;
+    padding: 2rem;
 }
 .attribution a {
     color: white;
