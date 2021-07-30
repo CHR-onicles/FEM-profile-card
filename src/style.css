@@ -50,7 +50,6 @@ h2 {
     z-index: -1;
     overflow: hidden;
 }
-
 .body__bg-img-top {
     top: -40%;
     left: -50%;
@@ -135,4 +134,16 @@ h2 {
 }
 .attribution a {
     color: white;
+}
+@media screen and (min-width: 700px) {
+    .body__bg-img-top {
+        top: -70%;
+        left: -20%;
+        width: 70%;
+    }
+    .body__bg-img-bottom {
+        bottom: -90%;
+        right: -20%;
+        width: 70%;
+    }
 }
