@@ -2,34 +2,53 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
   <title>Frontend Mentor | Profile card component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  Victor Crest
-  26
-  London
+  <main>
+    <!-- card -->
+    <article class="card">
+      <!-- card background image -->
+      <div class=" card__bg-img"></div>
+      <img src="./images/image-victor.jpg"  class="card__person-img" alt="Victor's image">
 
-  80K
-  Followers
+      <!-- card header text -->
+      <div class="card__header-text">
+        <div>
+          <h1 class="card__name">Victor Crest</h1>
+          <span class="card__age">26</span>
+        </div>
+        <p class="card__city">London</p>
+      </div>
+      
+      <!-- statistics -->
+      <div class="card__stats-container">
+        <div>
+          <h2 class="card__stats-figure">80K</h2>
+          <span class="card__stats-text">Followers</span>
+        </div>
+        <div>
+          <h2 class="card__stats-figure">803K</h2>
+          <span class="card__stats-text">Likes</span>
+        </div>
+        <div>
+          <h2 class="card__stats-figure">1.4K</h2>
+          <span class="card__stats-text">Photos</span>
+        </div>
+      </div>
+      <!-- End statistics -->
+    </article>
+    <!-- End card -->
+  </main>
 
-  803K
-  Likes
-
-  1.4K
-  Photos
-  <div class="attribution">
+  <!-- footer -->
+  <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    Coded by <a href="https://github.com/CHR-onicles" target="_blank">CHR-onicles</a>.
+  </footer>
+  <!-- End footer -->
 </body>
 </html>

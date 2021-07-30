@@ -1,0 +1,120 @@
+/*============================
+FONTS
+============================*/
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+/*============================
+GLOBAL VARIABLES
+============================*/
+:root {
+    --clr-bright-orange: hsl(31, 77%, 52%);
+    --clr-dark-cyan: hsl(185, 75%, 39%);
+    --clr-very-dark-desat-blue: hsl(229, 23%, 23%);
+    --clr-dark-grayish-blue: hsl(227, 10%, 46%);
+    --clr-gray-dark: hsl(0, 0%, 59%);
+    --radius: 8px;
+    --radius-2: 40px;
+    --ff-primary: "Kumbh Sans", sans-serif;
+    --ff-size: 18px;
+    --transition: all 0.3s;
+}
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background: lightblue;
+    padding-top: 10%;
+    font-size: var(--ff-size);
+    font-family: var(--ff-primary);
+    color: var(--clr-gray-dark)
+}
+h1, h2{
+    font-family: var(--ff-primary);
+    color: var(--clr-very-dark-desat-blue);
+    font-size: var(--ff-size);
+    font-weight: 700;
+}
+.card {
+    width: min(70vw, 450px);
+    height: 400px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: white;
+    position: relative;
+}
+.card__bg-img {
+    width: 100%;
+    height: 150px;
+    background: url("./images/bg-pattern-card.svg");
+    background-size: cover;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.card__person-img {
+    border: 7px solid white;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    width: 125px;
+    height: auto;
+    margin: 0 auto;
+    transform: translate(90%, 70%);
+}
+.card__header-text {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    place-items: center;
+}
+.card__header-text > div {
+    display: flex;
+    margin-top: 3rem;
+}
+.card__header-text > div span {
+    margin-left: .4em;
+}
+.card__header-text p{
+    margin-top: 1em;
+    font-size: 15px;
+}
+.card__name {
+    display: inline;
+}
+.card__age {
+    display: block;
+}
+.card__city {
+    display: block;
+}
+.card__stats-container {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-around;
+    text-align: center;
+    padding: 1.5rem;
+    border-top: 1px solid hsla(0, 0%, 59%, 30%);
+}
+.card__stats-container  div{
+    font-size: 13px;
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
