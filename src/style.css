@@ -25,7 +25,6 @@ GLOBAL VARIABLES
 }
 body {
     height: 100vh;
-    max-height: 100vh;
     display: grid;
     place-items: center;
     gap: 1rem;
