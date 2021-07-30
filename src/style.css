@@ -29,23 +29,41 @@ body {
     height: 100vh;
     display: grid;
     place-items: center;
-    background: lightblue;
+    background: var(--clr-dark-cyan);
     padding-top: 10%;
     font-size: var(--ff-size);
     font-family: var(--ff-primary);
-    color: var(--clr-gray-dark)
+    color: var(--clr-gray-dark);
+    overflow: hidden;
 }
-h1, h2{
+h1,
+h2 {
     font-family: var(--ff-primary);
     color: var(--clr-very-dark-desat-blue);
     font-size: var(--ff-size);
     font-weight: 700;
 }
+.body__bg-img-top,
+.body__bg-img-bottom {
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.body__bg-img-top {
+    top: -40%;
+    left: -50%;
+}
+.body__bg-img-bottom {
+    bottom: -20%;
+    right: -60%;
+}
 .card {
-    width: min(70vw, 450px);
+    width: 350px;
     height: 400px;
     border-radius: 10px;
-    box-shadow: 0 0 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -81,9 +99,9 @@ h1, h2{
     margin-top: 3rem;
 }
 .card__header-text > div span {
-    margin-left: .4em;
+    margin-left: 0.4em;
 }
-.card__header-text p{
+.card__header-text p {
     margin-top: 1em;
     font-size: 15px;
 }
@@ -104,17 +122,17 @@ h1, h2{
     padding: 1.5rem;
     border-top: 1px solid hsla(0, 0%, 59%, 30%);
 }
-.card__stats-container  div{
-    font-size: 13px;
+.card__stats-container div {
+    font-size: 12px;
     display: flex;
     flex-direction: column;
-    gap: .5em;
+    gap: 0.5em;
 }
-
 .attribution {
+    color: white;
     font-size: 11px;
     text-align: center;
 }
 .attribution a {
-    color: hsl(228, 45%, 44%);
+    color: white;
 }
